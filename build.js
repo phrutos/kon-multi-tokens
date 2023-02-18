@@ -30,12 +30,12 @@ function getStyleDictionaryConfig(theme) {
       `tokens/${theme}.json`,
     ],
     "platforms": {
-      "web": {
-        "transformGroup": "css",
+      "scss": {
+        "transformGroup": "scss",
         "buildPath": `output/`,
         "files": [{
-            "destination": `${theme}.css`,
-            "format": "css/variables",
+            "destination": `${theme}.scss`,
+            "format": "scss/variables",
             "selector": `.${theme}-theme`,
             "options": {
               // Look here 👇
@@ -58,7 +58,7 @@ console.log('Build started...');
 
     const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme));
 
-    StyleDictionary.buildPlatform('web');
+    StyleDictionary.buildPlatform('scss');
 
     console.log('\nEnd processing');
 })
