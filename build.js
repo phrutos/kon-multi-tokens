@@ -36,7 +36,11 @@ function getStyleDictionaryConfig(theme) {
         "files": [{
             "destination": `${theme}.css`,
             "format": "css/variables",
-            "selector": `.${theme}-theme`
+            "selector": `.${theme}-theme`,
+            "options": {
+              // Look here 👇
+              "outputReferences": true
+            }
           }]
       }
     }
@@ -47,7 +51,7 @@ console.log('Build started...');
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS
 
-['global', 'dark', 'light'].map(function (theme) {
+['global', 'dark', 'light', 'Theme Base', 'Theme Dialers'].map(function (theme) {
 
     console.log('\n==============================================');
     console.log(`\nProcessing: [${theme}]`);
