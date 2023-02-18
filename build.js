@@ -3,7 +3,7 @@ const StyleDictionaryPackage = require('style-dictionary');
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
 StyleDictionaryPackage.registerFormat({
-    name: 'css/variables',
+    name: 'scss/variables',
     formatter: function (dictionary, config) {
       return `${this.selector} {
         ${dictionary.allProperties.map(prop => `  --${prop.name}: ${prop.value};`).join('\n')}
@@ -51,7 +51,7 @@ console.log('Build started...');
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS
 
-['global', 'dark', 'light', 'Theme Base', 'Theme Dialers'].map(function (theme) {
+['global', 'dark', 'light', 'Theme-Base', 'Theme-Dialers'].map(function (theme) {
 
     console.log('\n==============================================');
     console.log(`\nProcessing: [${theme}]`);
