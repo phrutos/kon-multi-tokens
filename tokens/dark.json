@@ -33,7 +33,7 @@
       "field": {
         "value": "#35384C",
         "type": "color",
-        "description": "Dark color for fields to have a slight contracts against other surfaces. "
+        "description": "Dark color for fields to have a slight contracts against other surfaces. In same cases, can be used in tooltips."
       }
     },
     "accent": {
@@ -68,7 +68,7 @@
     },
     "fg": {
       "default": {
-        "value": "#ffffff",
+        "value": "#171721",
         "type": "color"
       },
       "placeholder": {
@@ -142,6 +142,11 @@
         "value": "#e0eaff",
         "type": "color"
       },
+      "subtle-2x": {
+        "value": "#ffffff00",
+        "type": "color",
+        "description": "One degree ligher then subtle. Usually for component's surface, like alerts or items that need to contrast with the brand-persian-blue and brand-persian-blue-dark."
+      },
       "muted": {
         "value": "#a4bcfd",
         "type": "color"
@@ -155,7 +160,7 @@
         "type": "color"
       },
       "emphasis-hover": {
-        "value": "#444ce7",
+        "value": "#84adff",
         "type": "color"
       },
       "on-info": {
@@ -172,6 +177,10 @@
         "value": "#fee4e2",
         "type": "color"
       },
+      "subtle-2x": {
+        "value": "#fef3f2",
+        "type": "color"
+      },
       "muted": {
         "value": "#f97066",
         "type": "color"
@@ -179,6 +188,16 @@
       "emphasis": {
         "value": "#f04438",
         "type": "color"
+      },
+      "hover": {
+        "value": "#b42318",
+        "type": "color",
+        "description": "Hover style for CTAs in error messages. "
+      },
+      "disabled": {
+        "value": "#fecdca",
+        "type": "color",
+        "description": "For disabled error messages."
       },
       "on-error": {
         "value": "#ffffff",
@@ -191,11 +210,17 @@
         "type": "color"
       },
       "subtle": {
-        "value": "#292c43",
-        "type": "color"
+        "value": "#203828",
+        "type": "color",
+        "description": "For cta background and success feedback surfaces."
+      },
+      "subtle-2x": {
+        "value": "#efefef",
+        "type": "color",
+        "description": "For cta background and success feedback surfaces that need more contract by still should be subtle."
       },
       "muted": {
-        "value": "#a6f4c5",
+        "value": "#054f31",
         "type": "color"
       },
       "emphasis": {
@@ -205,6 +230,11 @@
       "on-success": {
         "value": "#ffffff",
         "type": "color"
+      },
+      "on-success-mono": {
+        "value": "#027a48",
+        "type": "color",
+        "description": "To achieve a monochromatic look. This dark success works on sutble and subtle--2x surfaces."
       }
     },
     "input": {
@@ -230,6 +260,11 @@
           "value": "#98a2b3",
           "type": "color"
         },
+        "strong-2x": {
+          "value": "#eaecf0",
+          "type": "color",
+          "description": "For icons that are on gray surfaces, so contrast has the correct accessability."
+        },
         "subtle-1x": {
           "value": "#344054",
           "type": "color",
@@ -238,6 +273,11 @@
         "subtle-2x": {
           "value": "#475467",
           "type": "color"
+        },
+        "alert-1": {
+          "value": "#22ccee",
+          "type": "color",
+          "description": "For positive incentive alerts. Great for upgrading reminders to evoke good feelings instead of fear. "
         },
         "disabled": {
           "value": "#344054",
